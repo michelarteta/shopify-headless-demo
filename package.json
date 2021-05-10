@@ -1,0 +1,37 @@
+{
+  "name": "shopify-poc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:client": "cross-env PORT=3000 craco start",
+    "dev:server": "cross-env NODE_ENV=development node server",
+    "dev": "concurrently -ks first \"yarn dev:server\" \"yarn dev:client\"",
+    "build": "craco build",
+    "start": "cross-env NODE_ENV=production node server"
+  },
+  "dependencies": {
+    "@hapi/h2o2": "^9.0.2",
+    "@hapi/hapi": "^20.1.2",
+    "@hapi/inert": "^6.0.3",
+    "@headlessui/react": "^1.0.0",
+    "@heroicons/react": "^1.0.1",
+    "@tailwindcss/forms": "^0.3.2",
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "@craco/craco": "^6.1.1",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
+    "autoprefixer": "^9",
+    "node-sass": "^5.0.0",
+    "postcss": "^7",
+    "prop-types": "^15.7.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+  }
+}

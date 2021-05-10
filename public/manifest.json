@@ -1,0 +1,8 @@
+{
+  "short_name": "Shopify PoC",
+  "name": "Shopify Proof of Concept",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
